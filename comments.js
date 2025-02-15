@@ -1,11 +1,9 @@
 // create web server
-var express = require('express');
-var app = express();
-var bodyParser = require('body-parser');
-var fs = require('fs');
-var path = require('path');
+import express from 'express';
+import bodyParser from 'body-parser';
+import path from 'path';
 
-var COMMENTS_FILE = path.join(__dirname, 'comments.json');
+const app = express();
 
 app.set('port', (process.env.PORT || 3000));
 
